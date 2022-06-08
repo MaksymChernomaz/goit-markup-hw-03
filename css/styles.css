@@ -65,7 +65,7 @@ button {
 }
 
 .section {
-  padding-top: 94px;
+  padding: 94px 0px;
 }
 
 /* -----------------------Header----------------------- */
@@ -76,8 +76,8 @@ button {
 .header .container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-nav {
@@ -98,6 +98,7 @@ button {
 .link-list {
   display: flex;
   align-items: center;
+  color: var(--text-color);
 }
 
 .link-item:not(:last-child) {
@@ -134,13 +135,18 @@ button {
   color: var(--accent-color);
 }
 
-.header-link,
+.header-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
 .header-mail,
 .header-tel {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--second-title-color);
+  color: var(--text-color);
 }
 
 /* -----------------------Hero----------------------- */
@@ -155,6 +161,7 @@ button {
 }
 
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -162,7 +169,7 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  margin: 0px 237px;
+  margin: 0px auto;
   margin-bottom: 30px;
 }
 
@@ -182,6 +189,10 @@ button {
 }
 
 /* -----------------------Specifics----------------------- */
+.specifics {
+  padding-bottom: 94px;
+}
+
 .specifics-list {
   display: flex;
 }
@@ -203,9 +214,14 @@ button {
   margin-left: 30px;
 }
 
+.specifics-item {
+  width: 270px;
+}
+
 .specifics-title {
   font-weight: 700;
   line-height: 1.14;
+  font-size: 14px;
   text-transform: uppercase;
   color: var(--second-title-color);
   margin-bottom: 10px;
@@ -217,6 +233,7 @@ button {
 
 /* -----------------------About----------------------- */
 .about {
+  padding-top: 0px;
   padding-bottom: 94px;
 }
 .about-list {
@@ -254,9 +271,6 @@ button {
 
 .team-item {
   width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
   background-color: var(--body-background-color);
   border-radius: 0px 0px 4px 4px;
   margin-right: 30px;
@@ -269,7 +283,7 @@ button {
 }
 
 .img-team {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team-name {
@@ -285,6 +299,7 @@ button {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /* -----------------------Footer----------------------- */
@@ -316,7 +331,7 @@ button {
 }
 
 .footer-item + .footer-item {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 .footer-link {
@@ -344,9 +359,6 @@ button {
 }
 
 /* -----------------------PORTFOLIO----------------------- */
-.portfolio {
-  padding-bottom: 94px;
-}
 
 .filter-list {
   display: flex;
@@ -361,8 +373,6 @@ button {
   text-align: center;
   background-color: var(--second-background-color);
   color: var(--second-title-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
   padding: 6px 22px;
@@ -372,6 +382,8 @@ button {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--btn-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-list .item + .item {
@@ -389,7 +401,6 @@ button {
 
 .portfolio-text {
   color: var(--text-color);
-  padding-bottom: 94px;
 }
 
 .portfolio-title {
@@ -402,7 +413,10 @@ button {
 }
 
 .portfolio-card {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-text {
@@ -411,12 +425,7 @@ button {
 }
 
 .portfolio-item {
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 1130px;
   background: var(--body-background-color);
-  border: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
